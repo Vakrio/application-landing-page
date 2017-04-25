@@ -1,0 +1,322 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+    background-image: url("../img/bg3.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    font-family: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+    color: #3b3b3b;
+    padding: 1%;
+    
+
+}
+
+.container{
+    max-width: 1120px;
+    margin: 2% auto 0 auto;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 5px;
+
+}
+.logo h1{
+    font-weight: bold;
+    text-align: center;
+    color: #2b7dbe;
+}
+.display-mockup{
+    margin: 0;
+}
+.display-mockup img{
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    
+}
+/*Different Ways to Center*/
+/*
+.display-mockup{
+    text-align: center;
+}
+.display-mockup img{
+    width: 70%;
+    display: inline-block;
+    
+}
+*/
+.cols{
+    margin-top: 5%;
+}
+.col{
+    width: 31.33%;
+    float: left;
+    margin: 1%;
+}
+.cols h2{
+    text-align: center;
+    color: #2b7dbe;
+    
+}
+.fa-icon{
+    text-align: center;
+    color: #7a3400;
+}
+.stores{
+
+}
+/*https://martinwolf.org/blog/2013/04/centered-fluid-width-navigation-with-floating-links-thanks-to-fit-content*/
+.stores ul{
+    list-style-type: none;
+    margin: 0; padding: 0;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+    margin-top: 2%;
+
+}
+.stores ul li{
+    float: left;
+    margin-right: 16px;
+    
+}
+.stores ul li img{
+   
+}
+.social-icons{
+    text-align: center;
+    margin-top: 6%;
+}
+.social-icons .fa{
+    padding-right: 2%;
+    color: #b7b7b7;
+    box-sizing: border-box;  
+}
+
+.social-icons .fa:hover{
+    
+    color: #7a3400;
+}
+footer{
+    margin-top: 5%;
+}
+/*https://martinwolf.org/blog/2013/04/centered-fluid-width-navigation-with-floating-links-thanks-to-fit-content*/
+footer ul{
+    margin: 0; padding: 0;
+    list-style-type: none;
+    width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+}
+footer ul li{
+    float: left;
+}
+footer ul li a{
+    margin: 5px;
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 0.8em;
+}
+footer ul li a:hover{
+    color: #545454;
+    border-bottom: 2px solid #2b7dbe;
+}
+footer ul li a:active{
+    color: #545454;
+    border-bottom: none;
+}
+footer p{
+    text-align: center;
+    font-size: 0.8em;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
